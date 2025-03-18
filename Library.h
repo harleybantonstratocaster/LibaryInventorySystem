@@ -1,7 +1,6 @@
 #pragma once
 
 #include <vector>
-#include <memory>
 #include "Item.h"
 
 using namespace std;
@@ -13,6 +12,9 @@ private:
 public:
     Library();
 
+    bool loadFromFile(const string& filename);
+    bool saveToFile(const string& filename);
+
 
     void addItem(Item* item);
 
@@ -21,5 +23,7 @@ public:
     Item* findItem(int id);
 
     void printAllItems();
+    
+    Library& operator+=(Item* item);
 };
 

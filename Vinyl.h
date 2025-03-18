@@ -10,8 +10,8 @@ private:
 
 
 public:
-    Vinyl(string n, int i, bool a,int p, string a, string g, int du);
+    Vinyl(string n, int i, bool a,int p, string au, string g, int du);
 
-
-    void printData() const override;
+    virtual string serialize() const override;
+    void printData(ostream& os) const override;
 };

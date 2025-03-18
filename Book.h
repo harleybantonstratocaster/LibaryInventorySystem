@@ -10,7 +10,7 @@ private:
 public:
     Book(string n, int i, bool a,int p, string au, int pa);
         
-
-    void printData() const override;
+    virtual string serialize() const override;
+    void printData(ostream& os) const override;
 
 };

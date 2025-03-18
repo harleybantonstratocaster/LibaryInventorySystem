@@ -12,6 +12,6 @@ private:
 public:
     Dvd(string n, int i, bool a,int p, string d, string g, int du);
 
-
-    void printData() const override;
+    virtual string serialize() const override;
+    void printData(ostream& os) const override;
 };

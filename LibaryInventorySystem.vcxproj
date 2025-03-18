@@ -132,6 +132,7 @@
     <ClInclude Include="Dvd.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Library.h" />
+    <ClInclude Include="Userinterface.h" />
     <ClInclude Include="Vinyl.h" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,7 @@
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Userinterface.cpp" />
     <ClCompile Include="Vinyl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
